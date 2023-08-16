@@ -18,7 +18,6 @@ header {
   width: 100%;
   padding: 4vw;
   z-index: 15;
-  margin-bottom: 150px;
 }
 
 nav {
@@ -141,6 +140,22 @@ nav ul li a {
   width: calc(var(--index) * 23);
   border-radius: 50px;
 }
+
+section {
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.blue-section {
+    width: 100%;
+    background-color: #2f0899;
+}
+
+
+
+
+
+
 
 @media (max-width: 1127px) {
   nav ul li a {
