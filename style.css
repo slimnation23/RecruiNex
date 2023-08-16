@@ -155,15 +155,16 @@ nav ul li a {
     left: 0;
     right: 0;
     background: #fff;
-    display: none;
+    opacity: 0;
     flex-direction: column;
     padding: 0 4vw;
     height: 100vh;
     z-index: 15;
+    transition: .2s ease-in;
   }
 
   .nav-list.active {
-    display: flex;
+    opacity: 1;
   }
 
   nav ul li {
