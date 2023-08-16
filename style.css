@@ -368,7 +368,7 @@ section {
     width: 100%;
   }
   .blue-section {
-    padding: 50px;
+    padding: 35px;
   }
   .blue-section h2 {
     font-size: 60px;
@@ -418,6 +418,9 @@ section {
   }
   .section-num {
     grid-template-columns: 1fr;
+  }
+  .blue-section {
+    padding: 25px;
   }
   .blue-section h2 {
     font-size: 36px;
