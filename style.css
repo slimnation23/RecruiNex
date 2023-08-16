@@ -17,7 +17,9 @@ header {
   height: 100vh;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 4vw;
 }
 
 nav {
@@ -27,6 +29,7 @@ nav {
   padding: 0 4vw;
   height: 82px;
   position: absolute;
+  left: 0;
   top: 0;
   background-color: #fff;
   border-bottom-right-radius: 20px;
@@ -88,9 +91,61 @@ nav ul li a {
   cursor: pointer;
 }
 
+.header-content h1 {
+  font-size: calc(var(--index) * 3.3);
+  font-weight: 600;
+  color: #363636;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.header-content h1 span {
+  font-size: calc(var(--index) * 3.3);
+  font-weight: 600;
+  color: #2f0899;
+}
+
+.header-content p {
+  font-size: calc(var(--index) * 1);
+  font-weight: 300;
+  color: #363636;
+  margin-bottom: 25px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 60px;
+  width: 274px;
+  background-color: #f68d2c;
+  border-radius: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header img {
+  width: calc(var(--index) * 25);
+  border-radius: 50px;
+}
+
 @media (max-width: 1127px) {
   nav ul li a {
     padding-left: 20px;
+  }
+  .header {
+    padding-top: 150px;
+    height: 100%;
+  }
+
+  .header-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
   }
 }
 
@@ -111,6 +166,21 @@ nav ul li a {
 }
 
 @media (max-width: 786px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header-content h1 {
+    font-size: 60px;
+  }
+  .header-content h1 span {
+    font-size: 60px;
+  }
+  .header-content p {
+    font-size: 20px;
+  }
+  .contact-btn {
+    font-size: 24px;
+  }
   .menu-toggle {
     width: 32px;
     height: 24px;
@@ -160,7 +230,7 @@ nav ul li a {
     padding: 0 4vw;
     height: 100vh;
     z-index: 15;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
   }
 
   .nav-list.active {
@@ -228,6 +298,9 @@ nav ul li a {
     width: 61px;
     height: 61px;
   }
+  .header img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -247,5 +320,18 @@ nav ul li a {
     width: 40px;
     height: 40px;
     margin-top: 10px;
+  }
+  .header-content h1 {
+    font-size: 36px;
+  }
+  .header-content h1 span {
+    font-size: 36px;
+  }
+  .header-content p {
+    font-size: 15px;
+  }
+  .contact-btn {
+    font-size: 20px;
+    width: 100%;
   }
 }
