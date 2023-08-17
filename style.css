@@ -217,7 +217,7 @@ section {
 #about,
 #consultation,
 .clients-items {
-  margin-bottom: calc(var(--index) * 6);
+  margin-bottom: calc(var(--index) * 4);
 }
 
 .icon-cards {
@@ -457,8 +457,8 @@ section {
 }
 
 .employee {
-  margin-top: calc(var(--index) * 6);
-  margin-bottom: calc(var(--index) * 6);
+  margin-top: calc(var(--index) * 4);
+  margin-bottom: calc(var(--index) * 4);
 }
 
 .employee h1 {
@@ -844,6 +844,14 @@ section {
   .hire-items p {
     font-size: 20px;
   }
+  .employee h1 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  .employee h1 span {
+    font-size: 60px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -962,7 +970,7 @@ section {
   .employee-header img {
     width: 104px;
     height: 123px;
-    margin-right: 5px;
+    margin-right: 15px;
   }
   .employee-header__content h5 {
     font-size: 18px;
@@ -994,5 +1002,12 @@ section {
   }
   .skill-item {
     margin-bottom: 10px;
+  }
+  .employee h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  .employee h1 span {
+    font-size: 36px;
   }
 }
