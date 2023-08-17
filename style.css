@@ -215,7 +215,8 @@ section {
 #expertise,
 #clients,
 #about,
-#consultation {
+#consultation,
+.clients-items {
   margin-bottom: calc(var(--index) * 6);
 }
 
@@ -383,6 +384,69 @@ section {
   width: 100%;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+.slick-dots button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #ececec;
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+  background-color: #f68d2c;
+}
+
+.hire-items {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hire-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.hire-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 61px;
+  background-color: #fff;
+  color: #2f0899;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-right: 25px;
+}
+
+.hire-item h5 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.hire-items p {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 @media (max-width: 1127px) {
@@ -618,6 +682,23 @@ section {
   .slider-clients {
     gap: 0;
   }
+  .hire-num {
+    width: 49px;
+    height: 49px;
+    font-size: 30px;
+  }
+  .hire-h2 {
+    font-size: 55px !important;
+  }
+  .hire-item h5 {
+    font-size: 20px;
+  }
+  .hire-items {
+    align-items: flex-start;
+  }
+  .hire-items p {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -711,30 +792,22 @@ section {
   .client-item {
     text-align: center;
   }
-  
-}
-
-
-.slick-dots {
-  display: flex !important;
-  justify-content: center;
-  margin: 0;
-  padding: 1rem 0;
-  list-style-type: none;
-}
-.slick-dots li {
-  margin: 0 0.25rem;
-}
-.slick-dots button {
-  display: block;
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  border: none;
-  border-radius: 100%;
-  background-color: #ECECEC;
-  text-indent: -9999px;
-}
-.slick-dots li.slick-active button {
-  background-color: #f68d2c;
+  .hire-h2 {
+    font-size: 36px !important;
+  }
+  .hire-num {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .hire-item h5 {
+    font-size: 18px;
+  }
+  .hire-items {
+    grid-template-columns: 1fr;
+    margin-bottom: 25px;
+  }
+  .hire-items p {
+    font-size: 15px;
+  }
 }
