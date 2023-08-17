@@ -483,6 +483,9 @@ section {
   .num-item span {
     font-size: 20px;
   }
+  .icon-card__header h6 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -545,4 +548,21 @@ section {
   .num-item span {
     font-size: 15px;
   }
+  .icon-card__header img {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-card__header h6 {
+    font-size: 20px;
+  }
+  .icon-card p {
+    font-size: 15px;
+  }
+  .icon-card__drops {
+    align-items: center;
+  }
+  .icon-card__drops span {
+    font-size: 15px;
+  }
+  
 }
