@@ -606,7 +606,6 @@ section {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
   }
   .blue-section__content {
     grid-template-columns: 1fr;
@@ -650,7 +649,6 @@ section {
 @media (max-width: 786px) {
   .header-block {
     flex-wrap: wrap;
-    margin-top: 125px;
   }
   .header-content h1 {
     font-size: 60px;
