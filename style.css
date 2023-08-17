@@ -234,6 +234,7 @@ section {
   height: 357px;
   width: 400px;
   color: #010b23;
+  box-shadow: 0 5px 4px rgba(54, 54, 54, 0.0225);
 }
 
 .icon-card__header {
@@ -293,6 +294,7 @@ section {
   height: 307px;
   border-radius: 50px;
   background-color: #fff;
+  box-shadow: 0 5px 4px rgba(54, 54, 54, 0.0225);
 }
 
 .expertise-item:last-child {
@@ -356,17 +358,17 @@ section {
   justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .client-item {
   padding: 25px;
   background-color: #fff;
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 40px;
   font-weight: 600;
+  box-shadow: 0 5px 4px rgba(54, 54, 54, 0.0225);
+  margin-bottom: 20px;
 }
 
 .client-item span {
@@ -375,32 +377,13 @@ section {
   font-size: 40px;
 }
 
-.clients-items__mobile {
-  display: none;
+.slider-clients {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-
-.slick-next, .slick-arrow {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  bottom: 0;
-  /* left: 45%; */
-  border-radius: 50%;
-  border: none;
-  background-color: #f68d2c;
-}
-
-.slick-prev, .slick-arrow {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  bottom: 0;
-  /* right: 45%; */
-  background-color: #f68d2c;
-  border-radius: 50%;
-  border: none;
-}
-
 
 @media (max-width: 1127px) {
   nav ul li a {
@@ -442,6 +425,9 @@ section {
     height: auto;
   }
   .clients-items {
+    justify-content: space-around;
+  }
+  .slider-clients {
     justify-content: space-around;
   }
 }
@@ -629,6 +615,9 @@ section {
   .clients-items {
     gap: 10px;
   }
+  .slider-clients {
+    gap: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -719,18 +708,33 @@ section {
     justify-items: baseline;
     padding: 35px;
   }
+  .client-item {
+    text-align: center;
+  }
+  
+}
 
-  .clients-items__mobile {
-    display: flex;
-  }
-  .clients-items {
-    display: none;
-  }
-  .slider-clients {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: 100%;
-    margin-top: 25px;
-  }
+
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+.slick-dots button {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #ECECEC;
+  text-indent: -9999px;
+}
+.slick-dots li.slick-active button {
+  background-color: #f68d2c;
 }

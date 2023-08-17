@@ -21,6 +21,15 @@ function toggleMenu() {
   });
 }
 
-$('.clients-items__mobile').slick();
-
-
+$(window).on('load resize', function() {
+  if ($(window).width() < 576) {
+    $('.clients-items:not(.slick-initialized)').slick({
+      arrows: false,
+      dots: true,
+      speed: 300,
+      slidesToShow: 1,
+    });
+  } else {
+    $(".clients-items.slick-initialized").slick("unslick");
+  }
+});
