@@ -653,6 +653,9 @@ section {
   .header-content h1 {
     font-size: 60px;
   }
+  .mt-50 {
+    margin-top: 50px;
+  }
   .header-content h1 span {
     font-size: 60px;
   }
