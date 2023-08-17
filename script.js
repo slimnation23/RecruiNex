@@ -21,9 +21,9 @@ function toggleMenu() {
   });
 }
 
-$(window).on('load resize', function() {
+$(window).on("load resize", function () {
   if ($(window).width() < 576) {
-    $('.clients-items:not(.slick-initialized)').slick({
+    $(".clients-items:not(.slick-initialized)").slick({
       arrows: false,
       dots: true,
       speed: 300,
@@ -32,4 +32,26 @@ $(window).on('load resize', function() {
   } else {
     $(".clients-items.slick-initialized").slick("unslick");
   }
+});
+
+$(".employee-items").slick({
+  arrows: false,
+  dots: true,
+  speed: 300,
+  slidesToShow: 2,
+  responsive: [
+    {
+      breakpoint: 1118,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: true,
+      },
+    },
+    {
+      breakpoint: 707,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
