@@ -20,3 +20,7 @@ function toggleMenu() {
     });
   });
 }
+
+$('.clients-items__mobile').slick();
+
+
