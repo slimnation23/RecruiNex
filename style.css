@@ -119,7 +119,8 @@ nav ul li a {
   gap: 50px;
 }
 
-.header-content h1 {
+.header-content h1,
+.header-content h2 {
   font-size: calc(var(--index) * 2.9);
   font-weight: 600;
   color: #363636;
@@ -127,7 +128,8 @@ nav ul li a {
   margin-bottom: 25px;
 }
 
-.header-content h1 span {
+.header-content h1 span,
+.header-content h2 span {
   font-size: calc(var(--index) * 2.9);
   font-weight: 600;
   color: #2f0899;
@@ -478,14 +480,14 @@ section {
   margin-bottom: calc(var(--index) * 4);
 }
 
-.employee h1 {
+.employee h2 {
   font-size: 70px;
   font-weight: 600;
   color: #010b23;
   margin-bottom: 80px;
 }
 
-.employee h1 span {
+.employee h2 span {
   font-size: 70px;
   font-weight: 600;
   color: #2f0899;
@@ -769,13 +771,15 @@ footer {
   .header-block {
     flex-wrap: wrap;
   }
-  .header-content h1 {
+  .header-content h1,
+  .header-content h2 {
     font-size: 60px;
   }
   .mt-50 {
     margin-top: 50px;
   }
-  .header-content h1 span {
+  .header-content h1 span,
+  .header-content h2 span {
     font-size: 60px;
   }
   .header-content p {
@@ -911,6 +915,9 @@ footer {
     font-weight: 300;
     margin-right: 15px;
   }
+  .contacts-item__media {
+    display: flex;
+  }
   .contacts-item a img {
     width: 61px;
     height: 61px;
@@ -964,12 +971,12 @@ footer {
   .hire-items p {
     font-size: 20px;
   }
-  .employee h1 {
+  .employee h2 {
     font-size: 60px;
     margin-bottom: 40px;
     line-height: 1.2;
   }
-  .employee h1 span {
+  .employee h2 span {
     font-size: 60px;
   }
   .h1 {
@@ -1019,10 +1026,12 @@ footer {
     height: 40px;
     margin-top: 10px;
   }
-  .header-content h1 {
+  .header-content h1,
+  .header-content h2 {
     font-size: 36px;
   }
-  .header-content h1 span {
+  .header-content h1 span,
+  .header-content h2 span {
     font-size: 36px;
   }
   .header-content p {
@@ -1141,11 +1150,11 @@ footer {
   .skill-item {
     margin-bottom: 10px;
   }
-  .employee h1 {
+  .employee h2 {
     font-size: 36px;
     margin-bottom: 25px;
   }
-  .employee h1 span {
+  .employee h2 span {
     font-size: 36px;
   }
   .icon-card h4 {
