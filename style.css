@@ -39,7 +39,7 @@ header {
   width: 100%;
   padding: 4vw;
   z-index: 15;
-  margin-bottom: 50px;
+  margin-bottom: calc(var(--index) * 5)
 }
 
 nav {
@@ -115,7 +115,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 65px;
+  margin-top: calc(var(--index) * 5);
   gap: 50px;
 }
 
@@ -224,7 +224,7 @@ section {
 #consultation,
 .clients-items,
 .mb-4 {
-  margin-bottom: calc(var(--index) * 4);
+  margin-bottom: calc(var(--index) * 7);
 }
 
 .icon-cards {
@@ -383,10 +383,10 @@ section {
 }
 
 .client-item {
-  padding: 25px;
+  padding: 25px 45px;
   background-color: #fff;
   border-radius: 50px;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 600;
   box-shadow: 0 5px 4px rgba(54, 54, 54, 0.0225);
   margin-bottom: 20px;
@@ -395,7 +395,7 @@ section {
 .client-item span {
   color: #2f0899;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .slider-clients {
