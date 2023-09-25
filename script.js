@@ -27,6 +27,7 @@ $(window).on("load resize", function () {
       arrows: false,
       dots: true,
       speed: 300,
+      infinite: false,
       slidesToShow: 1,
     });
   } else {
@@ -39,6 +40,7 @@ $(".employee-items").slick({
   dots: true,
   speed: 300,
   slidesToShow: 2,
+  infinite: false,
   responsive: [
     {
       breakpoint: 1118,

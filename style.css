@@ -16,14 +16,16 @@ body {
 }
 
 .h1 {
-  font-size: 70px;
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
   color: #010b23;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
 .h1 span {
   color: #2f0899;
-  font-size: 70px;
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
 }
 
@@ -144,7 +146,7 @@ nav ul li a {
 
 .header-content h1,
 .header-content h2 {
-  font-size: calc(var(--index) * 2.4);
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
   color: #363636;
   line-height: 1.2;
@@ -153,7 +155,7 @@ nav ul li a {
 
 .header-content h1 span,
 .header-content h2 span {
-  font-size: calc(var(--index) * 2.4);
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
   color: #2f0899;
 }
@@ -214,8 +216,9 @@ section {
 }
 
 .blue-section h2 {
-  font-size: 70px;
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .blue-section__content {
@@ -514,14 +517,15 @@ section {
 }
 
 .employee h2 {
-  font-size: 70px;
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
   color: #010b23;
   margin-bottom: 80px;
+  line-height: 1.2;
 }
 
 .employee h2 span {
-  font-size: 70px;
+  font-size: calc(var(--index) * 2.8);
   font-weight: 600;
   color: #2f0899;
 }
@@ -533,7 +537,7 @@ section {
   box-shadow: 0 5px 4px rgba(54, 54, 54, 0.0225);
   padding: 25px;
   background-color: #fff;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 .slider-employee:last-child {
   margin-right: 0;
@@ -629,7 +633,7 @@ section {
 
 .skills-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -642,6 +646,7 @@ section {
   border-radius: 50px;
   height: 27px;
   padding: 15px;
+  margin-right: 5px;
   margin-bottom: 5px;
   border: 2px solid #2f0899;
 }
