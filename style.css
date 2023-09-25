@@ -39,7 +39,7 @@ header {
   width: 100%;
   /* padding: 4vw; */
   /* z-index: 15;
-  margin-bottom: calc(var(--index) * 5); */ 
+  margin-bottom: calc(var(--index) * 5); */
   padding-left: 4vw;
   padding-right: 4vw;
   margin-bottom: 150px;
@@ -53,17 +53,25 @@ header {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0 4vw;
   height: 82px;
   position: absolute;
   left: 0;
   top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #fff;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1288px;
   width: 100%;
 }
 
