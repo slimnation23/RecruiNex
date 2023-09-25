@@ -35,11 +35,21 @@ body {
 }
 
 header {
-  position: relative;
+  /* position: relative;
   width: 100%;
-  padding: 4vw;
-  z-index: 15;
-  margin-bottom: calc(var(--index) * 5)
+  /* padding: 4vw; */
+  /* z-index: 15;
+  margin-bottom: calc(var(--index) * 5); */ 
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 1288px;
 }
 
 nav {
@@ -112,6 +122,7 @@ nav ul li a {
 }
 
 .header-block {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -119,9 +130,13 @@ nav ul li a {
   gap: 50px;
 }
 
+.header-content {
+  width: 50%;
+}
+
 .header-content h1,
 .header-content h2 {
-  font-size: calc(var(--index) * 2.9);
+  font-size: calc(var(--index) * 2.4);
   font-weight: 600;
   color: #363636;
   line-height: 1.2;
@@ -130,7 +145,7 @@ nav ul li a {
 
 .header-content h1 span,
 .header-content h2 span {
-  font-size: calc(var(--index) * 2.9);
+  font-size: calc(var(--index) * 2.4);
   font-weight: 600;
   color: #2f0899;
 }
@@ -158,11 +173,15 @@ nav ul li a {
 }
 
 .contact-btn:hover {
-  opacity: .8;
+  opacity: 0.8;
+}
+
+.header-img {
+  width: 50%;
 }
 
 .header-img img {
-  width: calc(var(--index) * 28);
+  width: calc(var(--index) * 22);
   border-radius: 50px;
 }
 
@@ -170,6 +189,13 @@ section {
   padding-left: 4vw;
   padding-right: 4vw;
   margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
 }
 
 .blue-section {
@@ -619,12 +645,13 @@ footer {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding: 100px 50px;
+  max-width: 1288px;
+  padding: 4vw;
 }
 
 .footer h1 {
@@ -717,9 +744,8 @@ footer {
   }
 
   .header-img {
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: center;
   }
   .blue-section__content {
     grid-template-columns: 1fr;
@@ -797,6 +823,7 @@ footer {
   }
 
   .header-img {
+    width: 100%;
     order: 2;
   }
   .menu-toggle {
