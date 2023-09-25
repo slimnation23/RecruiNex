@@ -137,7 +137,7 @@ nav ul li a {
   align-items: center;
   justify-content: space-between;
   margin-top: calc(var(--index) * 5);
-  gap: 50px;
+  gap: 100px;
 }
 
 .header-content {
